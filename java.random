@@ -1,0 +1,28 @@
+/****************************************************************************
+ *
+ * Created by: Peter Zhu
+ * Created on: Feb 2018
+ * This program calculates how much energy could be released 
+ * Fomular is E = mc2 
+ * The M = 2.998x108 
+ ****************************************************************************/
+import java.util.Scanner;
+
+class Massenergy {
+    public static void main(String[] args){ 
+        Scanner mass = new Scanner(System.in);
+
+        double input;
+        double theSpeedOfLight = 299800000;
+        double answer;
+
+        System.out.println("Enter mass number:    ");
+        input = mass.nextDouble();
+
+        answer = theSpeedOfLight * theSpeedOfLight * input;
+
+        System.out.println(answer);
+
+
+    }
+}
