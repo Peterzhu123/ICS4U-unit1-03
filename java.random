@@ -8,21 +8,29 @@
  ****************************************************************************/
 import java.util.Scanner;
 
-class Massenergy {
-    public static void main(String[] args){ 
-        Scanner mass = new Scanner(System.in);
+class MassEnergy {
+        public static void main(String args[ ] ) {
+                Scanner mass = new Scanner(System.in);
+                
+                double input;
+                double theSpeedOfLight = 299800000;
+                double answer;
+                
+                System.out.println("Enter mass number:     " );
+                input = mass.nextDouble();
+                
+                 answer = theSpeedOfLight * theSpeedOfLight * input;
+                
+                System.out.println(answer);
+                
+                
+          }
 
-        double input;
-        double theSpeedOfLight = 299800000;
-        double answer;
-
-        System.out.println("Enter mass number:    ");
-        input = mass.nextDouble();
-
-        answer = theSpeedOfLight * theSpeedOfLight * input;
-
-        System.out.println(answer);
-
-
-    }
 }
+  
+              
+                            
+
+  
+
+  
